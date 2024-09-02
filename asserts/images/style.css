@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #181818;
+    color: #fff;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.container-1{
+    display: flex;
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
+    background-color: #111;
+    border-bottom: 3px solid #ffa500;
+}
+
+.profile-image img {
+    border-radius: 10%;
+    width: 200px;
+    height: 250px;
+    padding: 60px;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ffa500;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #ffa500;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.about-section, .skills-section, .portfolio-section, .contact-section, .blog-section {
+    padding: 50px 0;
+}
+
+.about-section h2, .skills-section h2, .portfolio-section h2, .contact-section h2, .blog-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+    color: #ffa500;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.personal-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.personal-info ul li {
+    margin-bottom: 10px;
+}
+
+.personal-info .btn {
+    margin-top: 20px;
+}
+
+.statistics {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stat {
+    text-align: center;
+    flex: 1;
+    padding: 0 20px;
+}
+
+.stat .number {
+    font-size: 36px;
+    color: #ffa500;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill {
+    flex: 1;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.skill .skill-name {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.skill-bar {
+    background-color: #333;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.skill-level {
+    height: 100%;
+    background-color: #ffa500;
+    border-radius: 5px;
+}
+
+.portfolio-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    flex: 1 0 48%;
+    margin-bottom: 20px;
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-section form input, .contact-section form textarea {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.contact-section form .btn {
+    max-width: 600px;
+    text-align: center;
+}
+
+.blog-section {
+    background-color: #111;
+    padding: 50px 0;
+}
+
+.blog-posts {
+    display: flex;
+}
