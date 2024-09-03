@@ -15,5 +15,15 @@ let e="u";
 if(a&&e){
     console.log("The character is a vowel");
 }else{
-    console.log("The character is not a vowel")
+    console.log("The character is not a vowel");
+}
+
+let char = 'a';
+
+if (char === 'a') {
+  console.log('The character is a.');
+} else if (char === 'b') {
+  console.log('The character is b.');
+} else {
+  console.log('The character is something else.');
 }
