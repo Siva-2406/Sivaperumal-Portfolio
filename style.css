@@ -2,9 +2,10 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #181818;
+    background-color: #000000;
     color: #fff;
     margin: 0px auto;
+    
 }
 
 .container {
@@ -21,36 +22,53 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 50px 0;
-    background-color: #111;
+    background-color: hsl(0, 0%, 0%);
     border-bottom: 3px solid #ffa500;
 }
 
-.profile-image img {
-    border-radius: 10%;
-    width: 200px;
-    height: 250px;
+.profile-image img{
+    border-radius: 20%;
+    width: 350px;
+    height: 450px;
     padding: 60px;
+    margin-left: 60px;
+     
 }
 
 .hero-text h1 {
     font-size: 36px;
     margin-bottom: 20px;
-    color: #ffa500;
-    padding-top: 40px;
+    color: rgb(255, 180, 0);
+    padding-top: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .hero-text p {
     font-size: 18px;
     margin-bottom: 20px;
+    color:	#929090 ;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-size: larger;
+    line-height: 25px;
 }
 
 .btn {
-    padding: 10px 20px;
-    background-color: #ffa500;
-    color: #fff;
+    padding: 15px 40px ;
+    background-color: rgb(34, 33, 33);
+    color: rgb(255, 180, 0);
     text-decoration: none;
-    border-radius: 5px;
-    /* transition: background-color 0.3s ease, transform 0.3s ease; */
+    border-radius: 35px;
+    margin-top: 50px;
+    border-color:hsl(0, 0%, 100%);
+    transition: 0.3s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transform: 2s ease;
+   
+    /* transition: background-color 0.3s ease,  */
+}
+.btn:hover{
+    background-color: rgb(255, 180, 0);
+    color: whitesmoke;
 }
 
 .about-section, .skills-section, .portfolio-section, .contact-section, .blog-section {
@@ -84,8 +102,46 @@ body {
 
 .statistics {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 10px; 
+  }
+  
+  .stat {
+    text-align: center;
+    margin: 10px;
+    border:  3px solid rgb(56, 54, 54);
+    border-radius: 10px;
+    background-color: rgb(19, 19, 19);
+  }
+  
+  .stat1{
+    text-align: center;
+    margin: 10px;
+    border: 3px solid rgb(56, 54, 54);
+    border-radius: 5px;
+    background-color: rgb(19, 19, 19);
+  }
+  .number {
+    font-size: 2rem;
+    font-weight: bold;
+    color:rgb(255, 180, 0);
+  }
+  
+  .label {
+    display: block;
+    margin-top: 5px;
+    font-size: 1rem;
+    color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+  }
+/*   
+.statistics {
+    display: flex;
     justify-content: space-between;
-}
+} */
 
 .stat {
     text-align: center;
@@ -95,9 +151,12 @@ body {
 
 .stat .number {
     font-size: 36px;
-    color: #ffa500;
+    color:rgb(255, 180, 0);
 }
 
+.seperate-divs{
+    display: flex;
+}
 .skills {
     display: flex;
     justify-content: space-between;
@@ -109,11 +168,18 @@ body {
     margin-bottom: 20px;
 }
 
-.skill .skill-name {
+.skill-name {
     font-size: 18px;
     margin-bottom: 10px;
+    color: #ffffff;
+}
+.skill-name:hover{
+    color: yellow;
 }
 
+.skill-name a:hover{
+    color: rgb(175, 106, 1);
+}
 .skill-bar {
     background-color: #333;
     height: 10px;
@@ -122,37 +188,11 @@ body {
 
 .skill-level {
     height: 100%;
-    background-color: #ffa500;
+    background-color: rgb(255, 180, 0);
     border-radius: 5px;
 }
 
 
-/* section {
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.parent-skill {
-    width: 200px;
-    height: auto;
-}
-
-.skill {
-    width: 200px;
-    height: 200px;
-    border-radius: 100%;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    -ms-border-radius: 100%;
-    -o-border-radius: 100%;
-    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
-    background-color: conic-gradient(#f9004d 10%, #212428 0); 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
 
 .portfolio-items {
     display: flex;
@@ -203,7 +243,144 @@ body {
 .skills-section{
     border-radius: 100%;
 }
-/* .container-3{
-    display: inline;
+.container-3{
+    display:grid;
+}
+
+.circle-button{
+padding: 0px;
+} 
+.button{
+    background-color: rgb(255, 180, 0);
+    padding: 20px;
+}
+.button:hover{
+    scale: 1;
+    transition: 1s; 
+
+}.icon{
+    display: flex;flex-direction: column;position: relative;right: 0px;
+   
+}
+
+.butn-align{
+    
+}
+.btn1 {
+    padding: 15px 40px ;
+    background-color: rgb(34, 33, 33);
+    color: rgb(255, 180, 0);
+    text-decoration: none;
+    border-radius: 35px;
+    margin-top: 50px;
+    border-color:rgb(255, 180, 0);
+    transition: 0.3s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transform: 2s ease;
+    /* /* z-index: 20px;/* */
+} 
+
+.btn1:hover{
+    background-color: rgb(255, 180, 0);
+    color: rgb(0, 0, 0);
+    transform: scale(1.05);
+   
+}
+.navbar-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    right: 50px;
+    margin-left: 90px;
+    position: fixed;
+    padding-top: 100px;
+}
+
+.circle-button:hover{
+    background-color: rgb(255, 180, 0); 
+    
+}
+
+.fa-solid:hover{
+    scale: 1;
+    transition: 1s; 
+}
+
+.quotes{
+    color:#000000 ;
+    text-align: center;
+    font-family:cursive;
+    font-size:larger;
+    animation-name:quotes;
+    animation-duration: 10s;
+    /* background-color: rgb(0, 0, 0); */
+    scale: 4s;
+    transition: 4s;
+    
+}
+
+.quotes:hover{
+    color:white;
+    background-color: rgb(0, 0, 0);
+    background-image:url("https://img.freepik.com/free-vector/abstract-black-yellow-grunge-background_1017-26684.jpg?w=1060&t=st=1727023098~exp=1727023698~hmac=8dbb3e6af5aff4ceab9a81f6f5f0730ecbc46c92038991ecaef04a95690b336d") ;
+}
+/* @keyframes quotes {
+    0%   {top: 0px;}
+  25%  {top: 200px;}
+  75%  {top: 50px}
+  100% {top: 100px;}
 } */
 
+ .taex{
+    margin-left: 200px;
+    margin-top: 0%;
+    padding-top: 0px;
+}
+
+.teax{
+    margin-left: 80px;
+    margin-bottom: 0%;
+    padding-top: 0%;
+} 
+
+/* .contact-section{
+    display:inline;
+}  */
+
+.touch{
+    display:flex;
+}
+
+.circle-button1 {
+    flex-direction: row;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(40, 40, 40);
+    color: white;
+    border:#fff;
+    border-radius: 90%;
+    font-size: 16px;
+    text-align: center;
+    line-height: 10px; /* Center text vertically */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 0px;
+    gap: 30px;
+}
+
+.circle-button2406{
+    padding: 10px;
+}
+
+td{
+    padding: 15px;
+}
+
+
+.cir-butn{
+    display: flex;
+}
+/* .cir-butn:hover{
+    background-color: #ffa500;
+    z-index: 20;
+} */

@@ -273,14 +273,19 @@
 // function ui(y){
 //     y=y+2;
 //     console.log(y)
-value(1);
-function value(n){
-    if(n%2==0){
-        print("Even number");
-    }else{
-        print("Odd number");
-    }
+// value(1);
+// function value(n){
+//     if(n%2==0){
+//         print("Even number");
+//     }else{
+//         print("Odd number");
+//     }
+// }
+// function print(n){
+//     console.log(n)
+//     }
+
+let a=1;
+for( i=a;i<=5;i++){
+    console.log(i);
 }
-function print(n){
-    console.log(n)
-    }
