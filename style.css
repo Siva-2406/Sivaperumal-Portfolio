@@ -1,3 +1,5 @@
+/* Portfolio Style */
+
 body {
     margin: 0;
     padding: 0;
@@ -37,7 +39,9 @@ body {
     margin-top: 0px;
      
 }
-
+.profile-image img:hover {
+    transition: scale(2);
+}
 .hero-text h1 {
     font-size: 36px;
     margin-bottom: 20px;
@@ -106,7 +110,7 @@ body {
    
 }
 .portfolio-items:hover{
-    transition: scale(2s);
+    transform: scale(1.01);
 }
 .about-content {
     display: flex;
@@ -247,6 +251,7 @@ body {
     color: white;
     text-decoration: none;
 }
+
 .skill-bar {
     background-color: #333;
     height: 10px;
@@ -392,9 +397,7 @@ padding: 0px;
     color:#000000 ;
     text-align: center;
     font-family: monospace;
-    font size:  50px;;
-    
-    animation-duration: 10s;
+    font size:  50px;
     /* background-color: rgb(0, 0, 0); */
     scale: 0.5s;
     transition: 2.4s;
