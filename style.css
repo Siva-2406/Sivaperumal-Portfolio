@@ -241,7 +241,7 @@ body {
 
 }
 .skill-name:hover{
-    color:rgb(0, 196, 205);
+    color:rgb(255, 223, 0);
 }
 
 .skill-name a:hover{
@@ -397,7 +397,7 @@ padding: 0px;
     color:#000000 ;
     text-align: center;
     font-family: monospace;
-    font size:  50px;
+    font-size:  32px;
     /* background-color: rgb(0, 0, 0); */
     scale: 0.5s;
     transition: 2.4s;
@@ -407,7 +407,7 @@ padding: 0px;
 .quotes:hover{
     color:rgb(250, 180, 0);
     background-color: rgb(0, 0, 0);
-    
+    text-shadow: #515050 3.5px 2px;
 }
 /* @keyframes quotes {
     0%   {top: 0px;}
@@ -415,7 +415,7 @@ padding: 0px;
   75%  {top: 50px}
   100% {top: 100px;}
 } */
-
+ 
  .taex{
     margin-left: 200px;
     margin-top: 0%;
@@ -454,13 +454,18 @@ padding: 0px;
     gap: 30px;
 }
 
+.td2{
+    padding: 0 30px;
+    font-size: 18px;
+}
 .circle-button2406{
     padding: 10px;
 
 }
 
 td{
-    padding: 15px;
+    padding: 15px 0;
+    font-size: 18px;
 }
 
 
@@ -722,6 +727,7 @@ td{
         height: 100%;
         background-color: rgb(255, 180, 0);
         border-radius: 5px;
+        
     }
     
     
@@ -843,8 +849,8 @@ td{
     .quotes{
         color:#000000 ;
         text-align: center;
-        font-family:'Times New Roman', Times, serif;
-        font-size:xx-large;
+        font-family:cursive;
+        font-size:600px;
         
         animation-duration: 10s;
         /* background-color: rgb(0, 0, 0); */
@@ -909,7 +915,7 @@ td{
     }
     
     td{
-        padding: 15px;
+        padding: 15px 0;
     }
     
     
