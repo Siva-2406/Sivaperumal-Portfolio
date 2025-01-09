@@ -482,7 +482,8 @@ td{
     background-color: #ffa500;
     z-index: 20;
 } */
- @media (max-width:600px) {
+/* Mobile responsiveness */
+@media (max-width: 600px) {
     body {
         margin: 0;
         padding: 0;
@@ -490,446 +491,91 @@ td{
         background-color: #000000;
         color: #fff;
         margin: 0px auto;
-        
     }
-    
+
     .container {
         width: 80%;
         margin: 0 auto;
         max-width: 1200px;
     }
-    .container-1{
+
+    .container-1 {
         display: flex;
+        flex-direction: column; /* Stack items on smaller screens */
     }
-    
+
     .hero-section {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        flex-direction: column;
         padding: 50px 0;
-        background-color: hsl(0, 0%, 0%);
-        border-bottom: 3px solid #ffa400;
-    }
-    
-    .profile-image img{
-        border-radius: 0%;
-        width: 400px;
-        height: 400px;
-        padding: 60px;
-        margin-left: 30px;
-        margin-top: 0px;
-         
-    }
-    
-    .hero-text h1 {
-        font-size: 36px;
-        margin-bottom: 20px;
-    
-        color: rgb(255, 180, 0);
-        padding-top: 170px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    }
-    
-    .hero-text p {
-        font-size: 18px;
-        margin-bottom: 20px;
-        color:	#929090 ;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
-        font-size: larger;
-        line-height: 35px;
-        margin-right: 180px;
-    }
-    
-    .btn {
-        padding: 15px 40px ;
-        background-color: rgb(34, 33, 33);
-        color: rgb(249, 198, 77);
-        text-decoration: none;
-        border-radius: 35px;
-        margin-top: 50px;
-        /* border: 3px hsl(0, 0%, 100%); */
-        transition: 0.3s;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        transform: 10s ease;
-       
-        /* transition: background-color 0.3s ease,  */
-    }
-    .btn:hover{
-        background-color: rgb(255, 180, 0);
-        color: whitesmoke;
-    }
-    /* .moreaboutbutton
-    {
-        display: flex;
-    } */
-    .rightarrowbtn{
-        padding: 20px;
-        border-radius: 80px;
-        margin-left: 170px;
-        margin-right: 100px;
-        margin-bottom: 0px;
-        
-    }
-    .about-section, .skills-section, .portfolio-section, .contact-section, .blog-section {
-        padding: 50px 0;
-    }
-    .h2{
-        color: #ffb400;
-        
-    }
-    .about-section h2, .skills-section h2, .portfolio-section h2, .contact-section h2, .blog-section h2 {
         text-align: center;
-        margin-bottom: 30px;
-        font-size: 32px;
-        color: #ffb400;
     }
-    
-    .portfolio-items{
-        padding: 10px;
-        gap: 50px;
-        height: 550px;
-        /* margin-bottom: 200px; */
-       
-    }
-    .portfolio-items:hover{
-        transition: scale(2s);
-    }
-    .about-content {
-        display: flex;
-        justify-content: space-between;
-    }
-    .per{
-        margin-right: 200px;
-    }
-    
-    .t{
-     justify-content: center;
-    }
-    
-    .personal-info ul {
-        list-style: none;
+
+    .profile-image img {
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
         padding: 0;
-        
     }
-    
-    .personal-info ul li {
-        margin-bottom: 10px;
+
+    .hero-text h1 {
+        font-size: 24px;
     }
-    
-    .personal-info .btn {
-        margin-top: 20px;
-    }
-    
-    .statistics {
-         display: flex; 
-         flex-wrap: wrap;
-         flex-direction: row;
-         justify-content: space-between;
-         align-items: center; 
-        background-color: #000000;
-        padding: 20px;
-        border-radius: 100px; 
-        margin-left: 0px;
-      }
-      
-      .stat {
-        text-align: center;
-        margin: 10px;
-        border:  3px solid rgb(24, 24, 24);
-        border-radius: 2px;
-        background-color: rgb(24, 24, 24);
-        border-width: 35px;
-        margin-right: 125px;
-      }
-      
-      .stat1{
-        text-align: center;
-        margin: 20px;
-        border: 1px solid rgb(24, 24, 24);
-        border-radius: 3px;
-        background-color: rgb(24, 24, 24);
-        border-width: 35px;
-        margin-left: 863px;
-        margin-right: 125px;
-    
-        
-      }
-      .number {
-        font-size: 2rem;
-        font-weight: bold;
-        color:rgb(255, 180, 0);
-      }
-      .number:hover{
-        color: #ffffff;
-        cursor: pointer;
-      }
-      .label {
-        display: block;
-        margin-top: 5px;
-        font-size: 1rem;
-        color: #ffffff;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
-      }
-      .label:hover{
-        
-        color: #ffee00;
-      }
-    /*   
-    .statistics {
-        display: flex;
-        justify-content: space-between;
-    } */
-    
-    .stat {
-        text-align: center;
-        flex: 1;
-        padding: 0 20px;
-    }
-    
-    .stat .number {
-        font-size: 36px;
-        color:rgb(255, 180, 0);
-    }
-    
-    .seperate-divs{
-        display: flex;
-    }
-    .skills {
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    .skill {
-        flex: 1;
-        padding: 0 20px;
-        margin-bottom: 20px;
-    }
-    
-    .skill-name {
-        font-size: 18px;
-        margin-bottom: 10px;
-        text-decoration:  #ffffff;
-    }
-    .skill-name:hover{
-        color: yellow;
-    }
-    
-    .skill-name a:hover{
-        color: rgb(0, 255, 72);
-    }
-    .skill-name a{
-        color: white;
-        text-decoration: none;
-    }
-    .skill-bar {
-        background-color: #333;
-        height: 10px;
-        border-radius: 100px;
-    }
-    
-    .skill-level {
-        height: 100%;
-        background-color: rgb(255, 180, 0);
-        border-radius: 5px;
-        
-    }
-    
-    
-    
-    .portfolio-items {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-       /* height: 50px; */
-    }
-    
-    .portfolio-item {
-        flex: 1 0 30%;
-        margin-bottom: 20px;
-    }
-    
-    .portfolio-item img {
-        /* width: 60%; */
-        border-radius: 10px;
-        height: 400px;
-    }
-    
-    .contact-section form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .contact-section form input, .contact-section form textarea {
-        width: 100%;
-        max-width: 600px;
-        margin-bottom: 20px;
-        padding: 10px;
-        background-color: #333;
-        border: none;
-        border-radius: 5px;
-        color: #fff;
-    }
-    
-    .contact-section form .btn {
-        max-width: 600px;
-        text-align: center;
-    }
-    
-    .blog-section {
-        background-color: #111;
-        padding: 50px 0;
-    } 
-    
-    .blog-posts {
-        display: flex;
-    }
-    .skills-section{
-        border-radius: 100%;
-    }
-    .container-3{
-        display:grid;
-    }
-    
-    .circle-button{
-    padding: 0px;
-    } 
-    .button{
-        background-color: rgb(255, 180, 0);
-        padding: 20px;
-    }
-    .button:hover{
-        scale: 1;
-        transition: 1s; 
-    
-    }.icon{
-        display: flex;flex-direction: column;position: relative;right: 0px;
-       
-    }
-    
-    /* .container123{
-        display: flex;
-        flex-direction: column;
-    } */
-    .btn1 {
-        padding: 15px 40px ;
-        background-color: rgb(34, 33, 33);
-        color: rgb(255, 255, 255);
-        text-decoration: none;
-        border-radius: 35px;
-        margin-top: 50px;
-        border-color:rgb(255, 180, 0);
-        transition: 0.3s;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        transform: 2s ease;
-        margin-left: 235px;
-        /* /* z-index: 20px;/* */
-    } 
-    
-    .btn1:hover{
-        background-color: rgb(255, 180, 0);
-        color: rgb(0, 0, 0);
-        transform: scale(1.05);
-       
-    }
-    .navbar-button{
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-        right: 50px;
-        margin-left: 90px;
-        position: fixed;
-        padding-top: 100px;
-    }
-    
-    .circle-button:hover{
-        background-color: rgb(255, 180, 0); 
-        
-    }
-    
-    .fa-solid:hover{
-        scale: 1;
-        transition: 1s; 
-    }
-    
-    .quotes{
-        color:#000000 ;
-        text-align: center;
-        font-family:cursive;
-        font-size:600px;
-        
-        animation-duration: 10s;
-        /* background-color: rgb(0, 0, 0); */
-        scale: 4s;
-        transition: 4s;
-        
-    }
-    
-    .quotes:hover{
-        color:rgb(250, 180, 0);
-        background-color: rgb(0, 0, 0);
-        background-image:url("https://img.freepik.com/free-vector/abstract-black-yellow-grunge-background_1017-26684.jpg?w=1060&t=st=1727023098~exp=1727023698~hmac=8dbb3e6af5aff4ceab9a81f6f5f0730ecbc46c92038991ecaef04a95690b336d") ;
-    }
-    /* @keyframes quotes {
-        0%   {top: 0px;}
-      25%  {top: 200px;}
-      75%  {top: 50px}
-      100% {top: 100px;}
-    } */
-    
-     .taex{
-        margin-left: 200px;
-        margin-top: 0%;
-        padding-top: 0px;
-    }
-    
-    .teax{
-        margin-left: 80px;
-        margin-bottom: 0%;
-        padding-top: 0%;
-        width: 150px;
-    } 
-    
-    /* .contact-section{
-        display:inline;
-    }  */
-    
-    .touch{
-        display:flex;
-    }
-    
-    .circle-button1 {
-        flex-direction: row;
-        width: 40px;
-        height: 40px;
-        background-color: rgb(40, 40, 40);
-        color: white;
-        border:#fff;
-        border-radius: 90%;
+
+    .hero-text p {
         font-size: 16px;
-        text-align: center;
-        line-height: 10px; /* Center text vertically */
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-        padding: 0px;
-        gap: 30px;
+        margin-right: 0;
     }
-    
-    .circle-button2406{
-        padding: 10px;
-    
+
+    .btn, .btn1 {
+        font-size: 16px;
+        padding: 12px 30px;
     }
-    
-    td{
-        padding: 15px 0;
+
+    .portfolio-items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
     }
-    
-    
-    .cir-butn{
-        display: flex;
+
+    .stat {
+        width: 100%;
     }
-    
-    .form{
-        width: 600px;
+
+    .skills {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
     }
- }
+
+    .contact-section form input,
+    .contact-section form textarea {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .portfolio-item img {
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+/* Progress Bar Animation */
+@keyframes progressBar {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: var(--progress); /* Ensure this value is set dynamically */
+    }
+}
+
+.skill-level {
+    height: 100%;
+    background-color: rgb(255, 180, 0);
+    border-radius: 5px;
+    animation: progressBar 2s ease-out forwards;
+}
+
+/* Optional: If you want to dynamically set width from a data attribute or JS, you could do: */
+.skill-level[data-progress] {
+    --progress: attr(data-progress);
+}
