@@ -1,0 +1,38 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🧮Financial Calculator - India</title>
+    <link rel="stylesheet" href="fCalculator.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="theme-toggle">
+        <button onclick="toggleTheme()">Toggle Dark/Light Mode</button>
+    </div>
+    <div class="calculator">
+        <h2>Financial Calculator (₹)</h2>
+        <label for="amount">Amount (₹):</label>
+        <input type="number" id="amount" placeholder="Enter amount" oninput="calculate()">
+
+        <label for="rate">Interest Rate (%):</label>
+        <input type="number" id="rate" placeholder="Enter interest rate" oninput="calculate()">
+
+        <label for="years">Years:</label>
+        <input type="number" id="years" placeholder="Enter years" oninput="calculate()">
+
+        <h3>Result:</h3>
+        <p id="result">₹0.00</p>
+
+        <div class="chart-container">
+            <canvas id="myChart"></canvas>
+        </div>
+    </div>
+<script src="fCalculator.js"></script>
+   
+    
+</body>
+</html>
