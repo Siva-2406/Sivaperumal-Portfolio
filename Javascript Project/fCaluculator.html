@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Calculator</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="fCalculator.css">
+</head>
+<body>
+    <div class="dark-mode-toggle">
+        <label class="switch">
+            <input type="checkbox" id="dark-mode-switch">
+            <span class="slider"></span>
+        </label>
+    </div>
+    <div class="container">
+        <h1>Loan Calculator</h1>
+        <div class="calculator">
+            <div class="input-group">
+                <label for="amount">Loan Amount (₹)</label>
+                <input type="number" id="amount" placeholder="Enter amount in INR">
+            </div>
+            <div class="input-group">
+                <label for="rate">Interest Rate (%)</label>
+                <input type="number" id="rate" placeholder="Enter interest rate">
+            </div>
+            <div class="input-group">
+                <label for="years">Loan Term (Years)</label>
+                <input type="number" id="years" placeholder="Enter term in years">
+            </div>
+            <button id="calculate">Calculate</button>
+        </div>
+        <div class="results">
+            <div id="monthly-payment" class="result-box">Monthly Payment: ₹0.00</div>
+            <div id="total-payment" class="result-box">Total Payment: ₹0.00</div>
+            <div id="total-interest" class="result-box">Total Interest: ₹0.00</div>
+        </div>
+        <div id="chart-container">
+            <canvas id="payment-chart"></canvas>
+        </div>
+    </div>
+<script src="fCalculator.js"></script>
+   
+</body>
+</html>
