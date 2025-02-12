@@ -1,45 +1,58 @@
 
-function toggleTheme() {
-    document.body.classList.toggle("dark-mode");
-}
+let paymentChart;
 
-function calculate() {
-    let amount = parseFloat(document.getElementById('amount').value) || 0;
-    let rate = parseFloat(document.getElementById('rate').value) || 0;
-    let years = parseFloat(document.getElementById('years').value) || 0;
-    
-    if (amount === 0 || rate === 0 || years === 0) {
-        document.getElementById('result').innerText = "₹0.00";
-        displayChart(0, 0);
-        return;
-    }
-    
-    let interest = (amount * rate * years) / 100;
-    let total = amount + interest;
-    let formatter = new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR' });
-    document.getElementById('result').innerText = formatter.format(total);
-    
-    displayChart(interest, amount);
-}
+document.getElementById('dark-mode-switch').addEventListener('change', function() {
+    document.body.classList.toggle('dark-mode', this.checked);
+});
 
-function displayChart(interest, amount) {
-    let ctx = document.getElementById("myChart").getContext("2d");
-    if (window.myChart) {
-        window.myChart.destroy();
+document.getElementById('calculate').addEventListener('click', function() {
+    const amount = document.getElementById('amount').value;
+    const rate = document.getElementById('rate').value;
+    const years = document.getElementById('years').value;
+
+    const principal = parseFloat(amount);
+    const calculatedInterest = parseFloat(rate) / 100 / 12;
+    const calculatedPayments = parseFloat(years) * 12;
+
+    const x = Math.pow(1 + calculatedInterest, calculatedPayments);
+    const monthly = (principal * x * calculatedInterest) / (x - 1);
+
+    if (isFinite(monthly)) {
+        const totalPayment = (monthly * calculatedPayments).toFixed(2);
+        const totalInterest = (totalPayment - principal).toFixed(2);
+
+        // Format to INR
+        document.getElementById('monthly-payment').textContent = `Monthly Payment: ₹${monthly.toFixed(2)}`;
+        document.getElementById('total-payment').textContent = `Total Payment: ₹${totalPayment}`;
+        document.getElementById('total-interest').textContent = `Total Interest: ₹${totalInterest}`;
+
+        updateChart(principal, totalInterest);
+    } else {
+        alert('Please check your numbers');
     }
-    window.myChart = new Chart(ctx, {
-        type: "pie",
+});
+
+function updateChart(principal, interest) {
+    if (paymentChart) {
+        paymentChart.destroy();
+    }
+
+    const ctx = document.getElementById('payment-chart').getContext('2d');
+    paymentChart = new Chart(ctx, {
+        type: 'doughnut',
         data: {
-            labels: ["Total Interest", "Principal Amount"],
+            labels: ['Principal', 'Interest'],
             datasets: [{
-                data: [interest, amount],
-                backgroundColor: ["#e63946", "#14213d"],
-                borderWidth: 1,
+                data: [principal, interest],
+                backgroundColor: ['#28a745', '#007bff']
             }]
         },
         options: {
             responsive: true,
-            maintainAspectRatio: false
+            maintainAspectRatio: false,
+            legend: {
+                position: 'bottom'
+            }
         }
     });
 }
